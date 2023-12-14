@@ -10,9 +10,18 @@
   </div>
 </template>
 
-<script>
+<script >
+import TheHeader from './components/TheHeader.vue';
+import BadgeList from './components/BadgeList.vue';
+import UserInfo from './components/UserInfo.vue';
+
 export default {
-  data() {
+  components: {
+    TheHeader,
+    BadgeList,
+    UserInfo
+  },
+ data() {
     return {
       activeUser: {
         name: 'Maximilian Schwarzmüller',
@@ -24,7 +33,7 @@ export default {
 };
 </script>
 
-<style>
+<style >
 html {
   font-family: sans-serif;
 }
